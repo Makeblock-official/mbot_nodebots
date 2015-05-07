@@ -1,0 +1,27 @@
+{
+  "name": "shenjs-nodebots-session",
+  "version": "1.0.0",
+  "description": "repo for shenjs nodebots session",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsconfcn/nodebots-session.git"
+  },
+  "keywords": [
+    "nodebots",
+    "shenjs",
+    "jsconfcn"
+  ],
+  "author": "jsconfcn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsconfcn/nodebots-session/issues"
+  },
+  "homepage": "https://github.com/jsconfcn/nodebots-session",
+  "dependencies": {
+    "firmata": "^0.4.1"
+  }
+}
