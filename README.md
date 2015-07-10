@@ -10,9 +10,13 @@
 
 ### Getting started
 
-1. Install [Makeblock-USB-Driver](https://github.com/Makeblock-official/Makeblock-USB-Driver) **This step needs reboot your computer**
-2. [Build the bot](http://www.instructables.com/id/How-to-make-a-mBot-with-Makeblock/)
-3. Install depedencies(I presume you already have nodejs + npm installed.)
+Note that 
+
+1. Install [Arduino IDE](http://arduino.cc)
+2. Install [Makeblock-USB-Driver](https://github.com/Makeblock-official/Makeblock-USB-Driver) Note for Mac users, use the driver included in this repo in the `drivers` folder as this one is signed.  **This step will reboot your computer** 
+4. [Build the bot](http://www.instructables.com/id/How-to-make-a-mBot-with-Makeblock/)
+5. Install depedencies (I presume you already have nodejs + npm installed.)
+
 ```
 git clone git@github.com:jsconfcn/nodebots-session.git && cd nodebots-session
 npm install
