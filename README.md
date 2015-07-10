@@ -21,7 +21,12 @@ Note that
 git clone git@github.com:jsconfcn/nodebots-session.git && cd nodebots-session
 npm install
 ```
-4. Running Example
+
+6. Install fimata. Open arduino and navigage to `firmware/mbotFirmata/mbotFirmata.ino` and open it. 
+
+Compile and then upload to the board. 
+
+7. Running Example
 ```
 node examples/test.js
 ```
