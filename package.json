@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/jsconfcn/nodebots-session",
   "dependencies": {
-    "firmata": "^0.5.2",
     "johnny-five": "^0.8.76",
     "keypress": "^0.2.1"
   }
