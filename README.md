@@ -68,6 +68,21 @@ Under your mbot is a sensor which you can use to detect lines. Look at
 getting one of the two sensors to be bright and one to be dark so it can follow
 an edge.
 
+## 2.4GHz wireless module
+
+Install using:
+
+```
+npm install drivers/node-hid
+```
+
+Run example
+
+```
+node examples/wifi_motors.js
+```
+
+
 ### 深JS Nodebots session流程
 
 ##### 时间：暂定活动第一天晚上 19:30-22:00
