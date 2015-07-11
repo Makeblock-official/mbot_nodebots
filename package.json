@@ -23,6 +23,7 @@
   "homepage": "https://github.com/jsconfcn/nodebots-session",
   "dependencies": {
     "johnny-five": "^0.8.76",
-    "keypress": "^0.2.1"
+    "keypress": "^0.2.1",
+    "node-pixel": "^0.3.2"
   }
 }
