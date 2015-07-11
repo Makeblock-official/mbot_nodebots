@@ -26,10 +26,47 @@ npm install
 
 Compile and then upload to the board. 
 
-7. Running Example
-```
-node examples/test.js
-```
+## Examples
+
+Examples are in the examples directory. You can run using `node examples/file.js` like
+normal. Information about the examples is below
+
+### Motors
+
+Use `examples/motors.js` this will drive the mbot around using the arrow keys on
+your keyboard. You may need to change the details of the directions depending on
+how you wired up the motors.
+
+### Buzzer
+
+Use `examples/piezo.js` - this will make your mbot play some tunes.
+
+### Obstacle detection
+
+Use `examples/sonar.js` to detect the distance to an object. You can use this to 
+stop your robot from running into this.
+
+### Button
+
+Your mbot has a little button that you can use to trigger something maybe. Use
+`examples/button.js` to detect the button press and do something with it.
+
+### Light Sensor
+
+You can read the light level near the mbot - maybe you can make your mbot
+run away from too much light or move towards more light? Use `examples/light.js`
+
+### LEDs
+
+There are 2 LEDs on the mbot which are RGB LEDs. These are connected in a strip
+so you can use node-pixel to control them. An example is `examples\leds.js`
+
+### Reflectance sensor
+
+Under your mbot is a sensor which you can use to detect lines. Look at
+`examples\reflectance.js` to see how to get the data. You can detect lines by
+getting one of the two sensors to be bright and one to be dark so it can follow
+an edge.
 
 ### 深JS Nodebots session流程
 
