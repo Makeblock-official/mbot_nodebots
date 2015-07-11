@@ -51,8 +51,7 @@
 
 #define REGISTER_NOT_SPECIFIED -1
 
-#define PULSE_IN                0x74 // send a pulse in command
-
+#define PING_READ                0x75 // send a pulse in command
 /*==============================================================================
  * GLOBAL VARIABLES
  *============================================================================*/
@@ -589,8 +588,8 @@ void sysexCallback(byte command, byte argc, byte *argv)
             process_command(argc, argv);
         }
         break;
-  }
-  case PULSE_IN:{
+    }
+  case PING_READ:{
       byte pulseDurationArray[4] = {
         (argv[2] & 0x7F) | ((argv[3] & 0x7F) << 7)
        ,(argv[4] & 0x7F) | ((argv[5] & 0x7F) << 7)
@@ -634,9 +633,8 @@ void sysexCallback(byte command, byte argc, byte *argv)
       responseArray[2] = (((unsigned long)duration >> 16) & 0xFF) ;
       responseArray[3] = (((unsigned long)duration >> 8) & 0xFF);
       responseArray[4] = (((unsigned long)duration & 0xFF));
-      Firmata.sendSysex(PULSE_IN,5,responseArray);
+      Firmata.sendSysex(PING_READ,5,responseArray);
       break;
-
     }
   }
 }
