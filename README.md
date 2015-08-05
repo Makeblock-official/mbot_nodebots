@@ -1,4 +1,4 @@
-## ShenJS nodebots session instruction
+## Using your mBot as a NodeBot
 
 ### Hardware [mbot](http://mblock.cc/) from [makeblock](http://www.makeblock.cc/)
 
@@ -82,7 +82,3 @@ Run example
 node examples/wifi_motors.js
 ```
 
-### [Schedule](https://github.com/jsconfcn/nodebots-session/blob/master/schedule.md)
-
-### License
-MIT
