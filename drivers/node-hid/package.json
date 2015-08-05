@@ -1,0 +1,72 @@
+{
+  "name": "node-hid",
+  "description": "USB HID device access library",
+  "version": "0.4.0",
+  "author": {
+    "name": "Hans Hübner",
+    "email": "hans.huebner@gmail.com",
+    "url": "https://github.com/hanshuebner"
+  },
+  "contributors": [
+    {
+      "name": "Blake Miner",
+      "email": "miner.blake@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hanshuebner/node-hid.git"
+  },
+  "scripts": {
+    "prepublish": "git submodule update --init",
+    "install": "node-gyp rebuild"
+  },
+  "main": "./index.js",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "license": "MIT/X11",
+  "dependencies": {
+    "nan": "^1.2.0"
+  },
+  "devDependencies": {},
+  "gypfile": true,
+  "gitHead": "c56c8aa5d113c6f2574d1f7e64d41745702965bb",
+  "bugs": {
+    "url": "https://github.com/hanshuebner/node-hid/issues"
+  },
+  "homepage": "https://github.com/hanshuebner/node-hid",
+  "_id": "node-hid@0.4.0",
+  "_shasum": "92034c13f847e80ef5e2abeb3a8a3b43b80639e8",
+  "_from": "node-hid@*",
+  "_npmVersion": "2.7.5",
+  "_nodeVersion": "0.12.2",
+  "_npmUser": {
+    "name": "natevw",
+    "email": "natevw@yahoo.com"
+  },
+  "dist": {
+    "shasum": "92034c13f847e80ef5e2abeb3a8a3b43b80639e8",
+    "tarball": "http://registry.npmjs.org/node-hid/-/node-hid-0.4.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "gorillatron",
+      "email": "jornandretangen@gmail.com"
+    },
+    {
+      "name": "hans",
+      "email": "hans.huebner@gmail.com"
+    },
+    {
+      "name": "bminer",
+      "email": "miner.blake@gmail.com"
+    },
+    {
+      "name": "natevw",
+      "email": "natevw@yahoo.com"
+    }
+  ],
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/node-hid/-/node-hid-0.4.0.tgz"
+}
