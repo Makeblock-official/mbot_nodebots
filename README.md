@@ -68,6 +68,43 @@ Under your mbot is a sensor which you can use to detect lines. Look at
 getting one of the two sensors to be bright and one to be dark so it can follow
 an edge.
 
+## Bluetooth module
+
+To use the BT module do the following modifications:
+
+* Remove the bluetooth module from the mBot
+* Open up the `firmware/mbotFirmata/mbotFirmata.ino` firmware in arduino
+* Search for the line that has `Firmata.begin(57600)` and replace with 
+`Firmata.begin(115200)`
+* Upload to the mBot board.
+* Turn the mbot off, install the bluetooth module, turn the board on again.
+* Pair the module (use whatever tool you need to make that work).
+
+Test the connection by using a screen terminal such as:
+
+```
+screen /dev/tty.Makeblock-ELETSPP
+```
+
+If this connects you should see the blue LED on the BT module go solid. From there
+hit the reset button on the board and then you should see something like the following
+appear on your terminal.
+
+```
+��ymbotFirmata.ino��{�3��l�A�2�U�
+```
+
+If you don't get that, test your connection etc. If you do then proceed.
+
+Now execute
+
+```
+node examples/leds.js /dev/tty.Makeblock-ELETSPP
+```
+
+And you should get blinking lights over BT. You can do the same thing with
+most of the examples though speed may be an issue in high data rate cases.
+
 ## 2.4GHz wireless module
 
 Install using:
