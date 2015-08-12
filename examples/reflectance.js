@@ -9,12 +9,12 @@ board.on("ready", function() {
   // Create a new `reflectance` hardware instance.
   var eyes = new five.IR.Reflect.Array({
     emitter: 13,
-    pins: ["A1", "A2"], // any number of pins
-    freq: 25
+    pins: ["A3", "A2"], // any number of pins
+    freq: 250
   });
 
   eyes.on('data', function() {
-    console.log( "Raw Values: ", this.raw );
+    //console.log( "Raw Values: ", this.raw );
   });
 
   eyes.on('line', function() {
