@@ -1,5 +1,7 @@
 ## Using your mBot as a NodeBot
 
+[![Join the chat at https://gitter.im/Makeblock-official/mbot_nodebots](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Makeblock-official/mbot_nodebots?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ### Hardware [mbot](http://mblock.cc/) from [makeblock](http://www.makeblock.cc/)
 
 > mBot is the easiest educational robot for kids to learn programming, Arduino and robotics.
