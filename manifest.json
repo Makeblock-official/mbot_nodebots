@@ -1,0 +1,6 @@
+{
+    "firmata": {
+        "bins": "/firmware/bin/",
+        "hexPath": "/mbotFirmata.ino.hex"
+    }
+}
