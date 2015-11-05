@@ -1,26 +1,28 @@
 {
-  "name": "shenjs-nodebots-session",
+  "name": "mbot-nodebot",
   "version": "1.1.0",
-  "description": "repo for shenjs nodebots session",
+  "description": "Repo for using an mbot as a nodebot",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jsconfcn/nodebots-session.git"
+    "url": "https://github.com/Makeblock-official/mbot_nodebots"
   },
   "keywords": [
     "nodebots",
     "shenjs",
-    "jsconfcn"
+    "jsconfcn",
+    "mbot",
+    "makeblock",
   ],
-  "author": "jsconfcn",
+  "author": "Andrew Fisher <ajfisher.td@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jsconfcn/nodebots-session/issues"
+    "url": "https://github.com/Makeblock-official/mbot_nodebots/issues"
   },
-  "homepage": "https://github.com/jsconfcn/nodebots-session",
+  "homepage": "https://github.com/Makeblock-official/mbot_nodebots",
   "dependencies": {
     "johnny-five": "^0.8.76",
     "keypress": "^0.2.1",

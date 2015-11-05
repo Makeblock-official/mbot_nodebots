@@ -20,11 +20,11 @@ Note that
 5. Install depedencies (I presume you already have nodejs + npm installed.)
 
 ```
-git clone git@github.com:jsconfcn/nodebots-session.git && cd nodebots-session
+git clone git@github.com:Makeblock-official/mbot_nodebots.git && cd mbot_nodebots
 npm install
 ```
 
-6. Install fimata. Open arduino and navigage to `firmware/mbotFirmata/mbotFirmata.ino` and open it.
+6. Install fimata. Open arduino and navigate to `firmware/mbotFirmata/mbotFirmata.ino` and open it.
 
 Compile and then upload to the board.
 
