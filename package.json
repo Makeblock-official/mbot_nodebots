@@ -1,31 +1,35 @@
 {
-  "name": "mbot-nodebot",
+  "name": "mbot_nodebots",
   "version": "1.1.0",
-  "description": "Repo for using an mbot as a nodebot",
+  "description": "Turn your mbot into a NodeBot",
   "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    "johnny-five": "^0.8.86",
+    "node-pixel": "^0.3.2",
+    "keypress": "^0.2.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Makeblock-official/mbot_nodebots"
+    "url": "git+https://github.com/Makeblock-official/mbot_nodebots.git"
   },
   "keywords": [
-    "nodebots",
-    "shenjs",
-    "jsconfcn",
     "mbot",
-    "makeblock",
+    "johnny-five",
+    "arduino",
+    "nodebot",
+    "nodebots"
   ],
   "author": "Andrew Fisher <ajfisher.td@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Makeblock-official/mbot_nodebots/issues"
   },
-  "homepage": "https://github.com/Makeblock-official/mbot_nodebots",
-  "dependencies": {
-    "johnny-five": "^0.8.76",
-    "keypress": "^0.2.1",
-    "node-pixel": "^0.3.2"
-  }
+  "homepage": "https://github.com/Makeblock-official/mbot_nodebots#readme"
 }
