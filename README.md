@@ -1,8 +1,8 @@
-## Using your mBot as a NodeBot
+# Using your mBot as a NodeBot
 
 [![Join the chat at https://gitter.im/Makeblock-official/mbot_nodebots](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Makeblock-official/mbot_nodebots?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-### Hardware [mbot](http://mblock.cc/) from [makeblock](http://www.makeblock.cc/)
+## Hardware [mbot](http://mblock.cc/) from [makeblock](http://www.makeblock.cc/)
 
 > mBot is the easiest educational robot for kids to learn programming, Arduino and robotics.
 
@@ -10,12 +10,14 @@
 
 *Photo from [Andrew Fisher](https://twitter.com/ajfisher)*
 
-### Getting started
+## Getting started
 
-Note that
+### Install using Arduino IDE
 
 1. Install [Arduino IDE](http://arduino.cc)
-2. Install [Makeblock-USB-Driver](https://github.com/Makeblock-official/Makeblock-USB-Driver) Note for Mac users, use the driver included in this repo in the `drivers` folder as this one is signed.  **This step will reboot your computer**
+2. Install [Makeblock-USB-Driver](https://github.com/Makeblock-official/Makeblock-USB-Driver) 
+Note for Mac users, use the driver included in this repo in the `drivers` folder 
+as this one is signed.  **This step will reboot your computer**
 4. [Build the bot](http://www.instructables.com/id/How-to-make-a-mBot-with-Makeblock/)
 5. Install depedencies (I presume you already have nodejs + npm installed.)
 
@@ -27,6 +29,22 @@ npm install
 6. Install fimata. Open arduino and navigate to `firmware/mbotFirmata/mbotFirmata.ino` and open it.
 
 Compile and then upload to the board.
+
+### Install using Interchange
+
+1. Make sure nodejs and npm are installed.
+2. Install [Makeblock-USB-Driver](https://github.com/Makeblock-official/Makeblock-USB-Driver) 
+Note for Mac users, use the driver included in this repo in the `drivers` folder 
+as this one is signed.  **This step will reboot your computer**
+3. Build the bot.
+4. Connect with USB cable and install firmware using interchange (instruction
+below assumes `./node_modules/.bin` is on your path. You can also install interchange
+with the `npm install -g ajfisher/nodebots-interchange` switch to install it globally.
+
+```
+npm install ajfisher/nodebots-interchange
+interchange install git+https://github.com/Makeblock-official/mbot_nodebots -a uno --firmata
+```
 
 ## Examples
 

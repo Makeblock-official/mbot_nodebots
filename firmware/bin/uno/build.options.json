@@ -1,9 +1,0 @@
-{
-  "customBuildProperties": "build.path=firmware/bin/uno,build.warn_data_percentage=75",
-  "fqbn": "arduino:avr:uno",
-  "hardwareFolders": "/Users/ajfisher/Downloads/NArduino.app/Contents/Java/hardware",
-  "librariesFolders": "/Users/ajfisher/Documents/Arduino/libraries,/Users/ajfisher/Downloads/NArduino.app/Contents/Java/libraries,/Users/ajfisher/Downloads/NArduino.app/Contents/Java/hardware/arduino/avr/libraries",
-  "runtime.ide.version": "10606",
-  "sketchLocation": "/Users/ajfisher/dev/tmp/mbot_nodebots/firmware/mbotFirmata/mbotFirmata.ino",
-  "toolsFolders": "/Users/ajfisher/Downloads/NArduino.app/Contents/Java/tools-builder,/Users/ajfisher/Downloads/NArduino.app/Contents/Java/hardware/tools/avr"
-}

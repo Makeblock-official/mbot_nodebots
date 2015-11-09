@@ -11,7 +11,12 @@
     "node-pixel": "^0.3.2",
     "keypress": "^0.2.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-exec": "^0.4.6"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
