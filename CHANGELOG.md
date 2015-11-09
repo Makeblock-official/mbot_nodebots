@@ -3,6 +3,7 @@
 ### 1.3.1
 
 * Patch to multiple firmata paths.
+* Updated documentation for the multiple firmatas
 
 ## 1.3
 

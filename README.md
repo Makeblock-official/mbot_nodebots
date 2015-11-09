@@ -43,7 +43,21 @@ with the `npm install -g ajfisher/nodebots-interchange` switch to install it glo
 
 ```
 npm install ajfisher/nodebots-interchange
-interchange install git+https://github.com/Makeblock-official/mbot_nodebots -a uno --firmata
+```
+
+You can install the firmware to work with either USB or Bluetooth with appropriate
+firmata using the firmata switch on interchange
+
+To use USB:
+
+```
+interchange install git+https://github.com/Makeblock-official/mbot_nodebots -a uno --firmata=usb
+```
+
+To use Bluetooth:
+
+```
+interchange install git+https://github.com/Makeblock-official/mbot_nodebots -a uno --firmata=bluetooth
 ```
 
 ## Examples
