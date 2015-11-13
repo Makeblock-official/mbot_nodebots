@@ -107,12 +107,15 @@ an edge.
 To use the BT module do the following modifications:
 
 * Remove the bluetooth module from the mBot
-* Open up the `firmware/mbotFirmata/mbotFirmata.ino` firmware in arduino
-* Search for the line that has `Firmata.begin(57600)` and replace with 
-`Firmata.begin(115200)`
-* Upload to the mBot board.
+* Install the bluetooth firmata with instruction below
+
+```
+interchange install git+https://github.com/Makeblock-official/mbot_nodebots -a uno --firmata=bluetooth
+```
+
 * Turn the mbot off, install the bluetooth module, turn the board on again.
-* Pair the module (use whatever tool you need to make that work).
+* Pair the module (use whatever tool you need to make that work - usually BT settings
+in your control panel).
 
 Test the connection by using a screen terminal such as:
 
