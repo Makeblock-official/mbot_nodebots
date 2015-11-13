@@ -10,7 +10,8 @@ board.on("ready", function() {
   var eyes = new five.IR.Reflect.Array({
     emitter: 13,
     pins: ["A3", "A2"], // any number of pins
-    freq: 250
+    freq: 100,
+    autoCalibrate: true,
   });
 
   eyes.on('data', function() {
