@@ -1,20 +1,21 @@
 var arduino = process.env.ARDUINO_PATH;
 
+console.log(arduino);
 module.exports = function(grunt) {
- 
+
     // configure the tasks
     grunt.initConfig({
         // exec: create task dynamically see end of file for where this happens.
         exec: {
             compile_usb: {
                 command: function() {
-                    return arduino + " --verify --verbose-build --board arduino:avr:uno" + 
+                    return arduino + " --verify --verbose-build --board arduino:avr:uno" +
                     " --pref build.path=firmware/bin/usb/uno/ firmware/build/usb/mbotFirmata/mbotFirmata.ino";
                 },
             },
             compile_bluetooth: {
                 command: function() {
-                    return arduino + " --verify --verbose-build --board arduino:avr:uno" + 
+                    return arduino + " --verify --verbose-build --board arduino:avr:uno" +
                     " --pref build.path=firmware/bin/bluetooth/uno/ firmware/build/bluetooth/mbotFirmata/mbotFirmata.ino";
                 },
             },
@@ -57,7 +58,7 @@ module.exports = function(grunt) {
         },
         clean: {
             firmware_build: {
-                src: [  
+                src: [
                         'firmware/build/usb',
                         'firmware/build/bluetooth',
                      ]
@@ -75,7 +76,7 @@ module.exports = function(grunt) {
             },
         },
     });
- 
+
     // load the tasks
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');

@@ -7,9 +7,9 @@
     "example": "examples"
   },
   "dependencies": {
-    "johnny-five": "^0.8.86",
-    "node-pixel": "^0.3.2",
-    "keypress": "^0.2.1"
+    "johnny-five": "^0.9.10",
+    "keypress": "^0.2.1",
+    "node-pixel": "^0.3.2"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

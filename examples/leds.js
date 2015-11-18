@@ -27,7 +27,7 @@ board.on("ready", function() {
 
         console.log("Strip ready, let's go");
 
-        var colors = ["#440000", "#000044"]; 
+        var colors = ["#440000", "#000044"];
         var current_colors = [0,1];
         var current_pos = [0,1];
         var blinker = setInterval(function() {
