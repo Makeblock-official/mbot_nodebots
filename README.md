@@ -32,7 +32,7 @@ git clone git@github.com:Makeblock-official/mbot_nodebots.git && cd mbot_nodebot
 npm install
 ```
 
-2. Install fimata. Open arduino and navigate to `firmware/mbotFirmata/mbotFirmata.ino` and open it.
+2. Install fimata. Open arduino and navigate to `firmware/src/mbotFirmata/mbotFirmata.ino` and open it.
 
 Compile and then upload to the board.
 
