@@ -15,7 +15,7 @@ board.on("ready", function() {
   });
 
   eyes.on('data', function() {
-    //console.log( "Raw Values: ", this.raw );
+    console.log( "Raw Values: ", this.raw );
   });
 
   eyes.on('line', function() {

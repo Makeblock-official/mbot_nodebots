@@ -18,27 +18,16 @@
 1. Install the USB Serial driver for your platform. It's in the `drivers` folder.
 If you're using linux you don't need to do anything. Win and Mac you will need to.
 You'll also need to reboot your computer for it to take effect.
-2. [Build the bot](http://www.instructables.com/id/How-to-make-a-mBot-with-Makeblock/)
-3. Install the dependencies of:
-    * [NodeJS](http://nodejs.org) - version 0.12.7
-    * [Set up Git](https://help.github.com/articles/set-up-git/)
+2. Build the bot according to the instructions in your kit
+3. Make sure you have a recent version of NodeJS install (v5 or v6 are best)
 
 ### Install using Arduino IDE
 
-1. Install [Arduino IDE](http://arduino.cc)
-
-```
-git clone git@github.com:Makeblock-official/mbot_nodebots.git && cd mbot_nodebots
-npm install
-```
-
-2. Install fimata. Open arduino and navigate to `firmware/src/mbotFirmata/mbotFirmata.ino` and open it.
-
-Compile and then upload to the board.
+Installing via Arduino is now no longer the preferred option.
 
 ### Install using Interchange
 
-Connect with USB cable and install firmware using interchange (instruction
+Connect with the USB cable and install firmware using interchange (instruction
 below assumes `./node_modules/.bin` is on your path. You can also install interchange
 with the `npm install -g nodebots-interchange` switch to install it globally.
 
@@ -63,8 +52,8 @@ interchange install git+https://github.com/Makeblock-official/mbot_nodebots -a u
 
 ## Examples
 
-Examples are in the examples directory. You can run using `node examples/file.js` like
-normal. Information about the examples is below
+Examples are in the examples directory. You can run from a command line using
+`node examples/file.js` like normal. Information about the examples is below
 
 ### Motors
 
@@ -74,12 +63,13 @@ how you wired up the motors.
 
 ### Buzzer
 
-Use `examples/piezo.js` - this will make your mbot play some tunes.
+Use `examples/piezo.js` - this will make your mbot play some tunes - note that
+the latency of Bluetooth means this won't work over the bluetooth controller.
 
 ### Obstacle detection
 
 Use `examples/sonar.js` to detect the distance to an object. You can use this to
-stop your robot from running into this.
+stop your robot from running into things.
 
 ### Button
 
@@ -93,15 +83,20 @@ run away from too much light or move towards more light? Use `examples/light.js`
 
 ### LEDs
 
-There are 2 LEDs on the mbot which are RGB LEDs. These are connected in a strip
-so you can use node-pixel to control them. An example is `examples\leds.js`
+There are 2 LEDs on the mbot which are RGB NeoPixel LEDs. These are connected
+in a strip so you can use node-pixel to control them. An example is `examples\leds.js`
 
 ### Reflectance sensor
 
 Under your mbot is a sensor which you can use to detect lines. Look at
 `examples\reflectance.js` to see how to get the data. You can detect lines by
-getting one of the two sensors to be bright and one to be dark so it can follow
-an edge.
+getting both sensors to detect a light or dark line (eg black tape on a light
+surface). Once both sensors are on the line when one drifts off (eg the right
+sensor) then you can steer back towards the line (turn back to the left in this
+case).
+
+Once you get this working you can build an effective line following bot.
+
 
 ## Bluetooth module
 
@@ -115,8 +110,8 @@ interchange install git+https://github.com/Makeblock-official/mbot_nodebots -a u
 ```
 
 * Turn the mbot off, install the bluetooth module, turn the board on again.
-* Pair the module (use whatever tool you need to make that work - usually BT settings
-in your control panel).
+* Pair the module (use whatever tool you need to make that work for your OS -
+usually BT settingsin your control panel).
 
 Test the connection by using a screen terminal such as:
 

@@ -1,5 +1,13 @@
 # Changelog for repository
 
+## 1.4
+
+* Updates to Firmata 2.5.1
+* Update to Node-pixel 0.6.1
+* Updates on all core deps
+* Fixes to various examples
+* Update documentation.
+
 ### 1.3.1
 
 * Patch to multiple firmata paths.

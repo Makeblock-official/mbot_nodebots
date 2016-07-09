@@ -7,6 +7,7 @@ var board = new five.Board();
 
 board.on("ready", function() {
   var proximity = new five.Proximity({
+    freq: 1000,
     controller: "HCSR04",
     pin: 10
   });
