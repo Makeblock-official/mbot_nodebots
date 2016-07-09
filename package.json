@@ -7,16 +7,16 @@
     "example": "examples"
   },
   "dependencies": {
-    "johnny-five": "0.9.39",
+    "johnny-five": "^0.9.59",
     "keypress": "^0.2.1",
     "node-pixel": "^0.6.0"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-cli": "^0.1.13",
-    "grunt-contrib-clean": "^0.6.0",
-    "grunt-contrib-copy": "^0.8.2",
-    "grunt-exec": "^0.4.6",
+    "grunt": "^1.0.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-exec": "^1.0.0",
     "grunt-string-replace": "^1.2.0"
   },
   "scripts": {
