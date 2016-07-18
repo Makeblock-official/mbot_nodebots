@@ -15,6 +15,8 @@ board.on("ready", function() {
 
     var button = new five.Button({
         pin: "A7",
+        controller: "TINKERKIT",
+        invert: true
     });
 
     button.on("press", function() {
