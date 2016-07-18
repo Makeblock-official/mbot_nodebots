@@ -28,7 +28,7 @@ module.exports = function(grunt) {
                 }],
                 options: {
                     replacements: [{
-                        pattern: /57600/,
+                        pattern: /57600/g,
                         replacement: '115200',
                     }],
                 },
