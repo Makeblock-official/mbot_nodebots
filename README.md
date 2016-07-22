@@ -21,7 +21,7 @@ Windows users will need to reboot after installing the drivers.
 If you're using linux you can skip this step. But instead you will need to add yourself to the `dialout` group using the command
 
 ```
-sudo usermod -G dialout YOUR_USERNAME
+sudo usermod -a dialout YOUR_USERNAME
 ```
 You will need to restart or logout and in again afterwards.
 
