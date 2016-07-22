@@ -16,7 +16,14 @@
 ### 1. Drivers
 
 Install the USB Serial driver for your platform found in the `drivers` folder.
-If you're using linux you can skip this step. Windows users will need to reboot after installing the drivers.
+Windows users will need to reboot after installing the drivers.
+
+If you're using linux you can skip this step. But instead you will need to add yourself to the `dialout` group using the command
+
+```
+sudo usermod -G dialout YOUR_USERNAME
+```
+You will need to restart or logout and in again afterwards.
 
 ### 2. Install Node.js
 
@@ -56,6 +63,8 @@ If you see `Error: no Arduino 'uno' found.`. Make sure the on/off switch is on. 
 If you see the `Error: Sending xxxx: receiveData timeout after 400ms`, try again after removing the bluetooth module. Replace it afterwards if you are following the bluetooth method.
 
 If you see `There was an error downloading the manifest file.` try checking your internet connection. If all connectivity fails, ask someone to kindly install firmata for you.
+
+If you see `Permission denied, cannot open /dev/ttyUSB0` double check you're in the dialout group and you restarted.
 
 ### 4. (Alternative) Install firmware using Arduino IDE
 
