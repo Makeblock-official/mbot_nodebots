@@ -26,6 +26,7 @@ board.on("ready", function() {
     strip.on("ready", function() {
 
         console.log("Strip ready, let's go");
+        console.log("Press Ctrl + c twice to quit.");
 
         var colors = ["#440000", "#000044"];
         var current_colors = [0,1];
