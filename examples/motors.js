@@ -4,8 +4,8 @@ var max_speed_l = 150;
 var max_speed_r = 140;
 
 // set up the input
-var stdin = process.openStdin();
-require('tty').setRawMode(true);
+var stdin = process.stdin;
+stdin.setRawMode(true);
 
 var board = new five.Board({port: process.argv[2]});
 
